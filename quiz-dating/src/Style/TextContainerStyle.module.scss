@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Monda:wght@400..700&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+@mixin text_decor($family, $font_weight, $size) {
+    font-family: $family;
+    font-weight: $font_weight;
+    font-size: $size;
+}
+
+.text_container {
+    width: 60%;
+    height: 1117px;
+    background-color: #0B0219;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.block_one {
+    width: 271px;
+    height: 90px;
+    border: 3px solid red;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+        @include text_decor('Mukta Mahee, sans-serif',700 ,48px );
+        color: white;
+    }
+}
+
+.block_text {
+
+    text-align: center;
+    p{
+        @include text_decor('Mohave, sans-serif',700 ,40px );
+        color: white;
+    }
+}
+
+.block_three{
+    width: 90%;
+    text-align: center;
+    p{
+        @include text_decor('Monda, sans-serif',400 ,20px );
+        color: white;
+    }
+}
