@@ -1,0 +1,53 @@
+.checkboxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 100px;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    width: 30%; 
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Monda', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    outline: 1px solid red;
+}
+
+
+.checkboxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.checkboxContainer6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px; 
+}
+
+.checkboxLabel6 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Monda', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+

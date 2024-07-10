@@ -17,10 +17,15 @@
 
     svg{
         margin: 15px;
+        cursor: pointer;
     }
 }
 
 .main_container{
     width: 100%;
     display: flex;
+}
+
+@media screen and (max-width: 400px) {
+    
 }

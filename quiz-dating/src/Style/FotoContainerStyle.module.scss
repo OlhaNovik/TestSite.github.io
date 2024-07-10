@@ -1,5 +1,29 @@
-.foto_container{
+.photoSlider{
     width: 40%;
     height: 1117px;
-    background-color: blueviolet;
+    background-color: #0B0219;
+    img{
+        width: 550px;
+        height: 665px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .photoSlider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Задаємо нижчий індекс, щоб фото було позаду основного контенту */
+    }
+    
+    .photoSlider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Забезпечує, щоб фото заповнило весь контейнер без спотворень */
+    }
+    
 }
