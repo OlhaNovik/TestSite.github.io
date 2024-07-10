@@ -220,7 +220,7 @@
 
 }
 
-.web9_hide_text{
+.web9_hide_text {
     margin-bottom: 10px;
     width: 340px;
     align-self: center;
@@ -229,5 +229,48 @@
     p {
         @include text_decor('Monda, sans-serif', 400, 16px);
         color: #84759B;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .text_container {
+        height: 782px;
+        width: 100%;
+        background-color: #0b02199c;
+    }
+
+    .web1_block_one {
+        width: 211px;
+        height: 75px;
+
+    }
+
+    .block_text {
+        p {
+            @include text_decor('Mohave, sans-serif', 700, 24px);
+        }
+    }
+
+    .web1_block_three {
+
+        p {
+            @include text_decor('Mukta Mahee, sans-serif', 400, 14px);
+            color: white;
+        }
+    }
+
+    .web1_block_four {
+        p{
+    @include text_decor('Mohave, sans-serif', 700, 24px);
+        } 
+    }
+    .container_btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .btn_yes{
+            margin: 25px 0 15px 0;
+        }
     }
 }
