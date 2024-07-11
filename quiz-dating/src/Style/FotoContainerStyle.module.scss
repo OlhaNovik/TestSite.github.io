@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .photoSlider {
         position: absolute;
         top: 0;
@@ -17,13 +17,13 @@
         width: 100%;
         height: 850px;
         overflow: hidden;
-        z-index: -1; /* Задаємо нижчий індекс, щоб фото було позаду основного контенту */
+        z-index: -1; 
     }
     
     .photoSlider img {
-        width: 395px;
+        width: 430px;
         height: 860px;
-        object-fit: cover; /* Забезпечує, щоб фото заповнило весь контейнер без спотворень */
+        object-fit: cover; 
     }
     
 }

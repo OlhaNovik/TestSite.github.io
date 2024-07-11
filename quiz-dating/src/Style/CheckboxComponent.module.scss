@@ -10,7 +10,7 @@
 .checkboxLabel {
     display: flex;
     align-items: center;
-    width: 30%; 
+    width: 30%;
     margin-bottom: 10px;
     color: white;
     font-family: 'Monda', sans-serif;
@@ -26,18 +26,10 @@ input[type="checkbox"] {
 }
 
 
-.checkboxContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-
 .checkboxContainer6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .checkboxLabel6 {
@@ -51,3 +43,24 @@ input[type="checkbox"] {
 }
 
 
+@media screen and (max-width: 450px) {
+    .checkboxContainer {
+        margin: 0;
+    }
+
+    .checkboxLabel {
+        font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+    .checkboxLabel6 {
+        font-size: 14px;
+    }
+    .checkboxContainer6 {
+        gap:5px;
+    }
+
+}

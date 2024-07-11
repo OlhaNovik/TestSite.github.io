@@ -18,13 +18,13 @@ const FotoContainerStyle = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setCurrentPhotoIndex(prevIndex => (prevIndex + 1) % photos.length);
-        }, 2000); // 2000 мілісекунд = 2 секунди
+        }, 2000); 
 
         return () => clearTimeout(timer);
-    }, [currentPhotoIndex]); // Запускати таймер при зміні currentPhotoIndex
+    }, [currentPhotoIndex]); 
 
-    // Масив з фотографіями
-    const photos = [photo1, photo2,photo3,photo4,photo5,photo6,photo7,photo8,photo9]; // Додайте інші фотографії сюди
+    const photos = [photo1, photo2,photo3,photo4,photo5,photo6,photo7,photo8,photo9];
+
 
     return (
         <div className={s.photoSlider}>

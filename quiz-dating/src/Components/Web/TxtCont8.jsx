@@ -6,7 +6,7 @@ const TxtCont8 = ({ onNext }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             onNext();
-        }, 3000); // 10000 мілісекунд = 10 секунд
+        }, 5000); 
 
         return () => clearTimeout(timer);
     }, [onNext]);
@@ -20,12 +20,15 @@ const TxtCont8 = ({ onNext }) => {
                 <p>DETTE ER IKKE EN DATINGSIDE.
                    <br></br> DU MELDER OG DU FAN, DET ER DET.</p>
             </div>
+            <div className={s.progress_container}>
+
+           
             <div className={s.text_progres}>
                <p> Dupliserte registreringer blir gjennomgått...</p></div>
                 <div className={s.container_progress}>
                     <div className={s.green_progress}></div>
                     <div className={s.white_progress}></div>
-                </div>
+                </div> </div>
         </div>
     )
 }
