@@ -10,7 +10,7 @@
 .checkboxLabel {
     display: flex;
     align-items: center;
-    width: 30%;
+    flex-basis: calc(33.33% - 10px); 
     margin-bottom: 10px;
     color: white;
     font-family: 'Monda', sans-serif;
